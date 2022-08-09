@@ -1,4 +1,4 @@
-import { Route, Routes, Navigate,BrowserRouter} from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 import Login from "./pages/login/login";
 import MainScreen from "./pages/mainScreen/mainScreen";
 import Register from './pages/register/register';
@@ -24,14 +24,12 @@ function App() {
 
   return (
     <div className="container">
-    <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainScreen />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register/>} />
         <Route path="/welcome/:id" element={<Welcome/>} />
       </Routes>
-    </BrowserRouter>
     </div>
   );
 }

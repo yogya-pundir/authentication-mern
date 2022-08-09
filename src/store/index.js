@@ -1,5 +1,6 @@
 import { createSlice, configureStore } from "@reduxjs/toolkit";
 
+
 const initialState = { username: "", email: "" };
 const authSlice = createSlice({
   name: "auth_",
@@ -19,3 +20,5 @@ const store = configureStore({
 
 export const authActions = authSlice.actions;
 export default store;
+
+
